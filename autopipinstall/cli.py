@@ -4,15 +4,18 @@
 
 import sys
 import importlib
-print("importlib file path:", getattr(importlib, '__file__', 'frozen or builtin'))
+# print("importlib file path:", getattr(importlib, '__file__', 'frozen or builtin'))
 import subprocess
 import re
 import os
+import shutil
 
 def print_alias_instruction():
+    autopip_path = shutil.which("autopipinstall")
+    alias_target = autopip_path if autopip_path else "autopipinstall"
     print("\n[autopipinstall] To automatically use this tool for all python3 scripts,")
     print("Add this line to your ~/.bashrc or ~/.zshrc:")
-    print(f'  alias python3="python3 {os.path.abspath(__file__)}"\n')
+    print(f'  alias python3="{alias_target}"\n')
 
 def run_script(script_path, args):
     proc = subprocess.Popen([sys.executable, script_path] + args, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
