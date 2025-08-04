@@ -20,6 +20,6 @@ It’s ideal for rapid prototyping, learning, and sharing scripts without manual
 ### Install from source (development mode):
 
 ```bash
-git clone https://github.com/yourusername/autopipinstall.git
+git clone https://github.com/xoxrumblelorexox/autopipinstall.git
 cd autopipinstall
 pip install -e .
