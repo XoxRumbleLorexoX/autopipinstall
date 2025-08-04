@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+autopipinstall/__init__.py
+autopipinstall/cli.py
+autopipinstall.egg-info/PKG-INFO
+autopipinstall.egg-info/SOURCES.txt
+autopipinstall.egg-info/dependency_links.txt
+autopipinstall.egg-info/entry_points.txt
+autopipinstall.egg-info/top_level.txt
